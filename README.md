@@ -1,1 +1,5 @@
-# Computer-Infrastructure
+matplotlib
+datetime
+pandas
+yfinance
+
