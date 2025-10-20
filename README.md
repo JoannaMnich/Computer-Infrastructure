@@ -1,5 +1,2 @@
-matplotlib
-datetime
-pandas
-yfinance
+
 
