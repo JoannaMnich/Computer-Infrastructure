@@ -1,0 +1,27 @@
+# Run faang script every Saturday at 09:00 UTC
+name: Run FAANG Script
+on:
+  schedule:
+    - cron: "0 9 * * 6"   # Every Saturday at 09:00 UTC
+  workflow_dispatch:       # Allows manual run from GitHub
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run FAANG script
+        run: |
+          python faang.py  
