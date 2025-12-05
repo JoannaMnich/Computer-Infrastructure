@@ -25,4 +25,4 @@ jobs:
 
       - name: Run FAANG script
         run: |
-          python faang_script.py  
+          python faang.py  
