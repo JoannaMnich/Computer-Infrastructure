@@ -1,19 +1,28 @@
 # Run faang script every Saturday at 09:00 UTC
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions
-on: [push, workflow_dispatch]
+name: Weekly FAANG Script Run
+run-name: ${{ github.actor }} created a FAANG workflow run
+on: 
+  schedule:
+    - cron: '0 9 * * SAT' # At 09:00 on Saturdays
+  workflow_dispatch:  # Allows manual run from the Actions tab
 jobs:
-  Explore-GitHub-Actions:
+  run_faang_script:
     runs-on: ubuntu-latest
+
     steps:
-      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
+      - name: Checkout repository
         uses: actions/checkout@v6
-      - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
         run: |
-          ls -a ${{ github.workspace }}
-      - run: echo "This job's status is ${{ job.status }}."
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run FAANG script
+        run: |
+          python faang_script.py  
