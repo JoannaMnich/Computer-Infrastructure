@@ -1,10 +1,11 @@
 # Run the faang script every Saturday at 09:00 UTC
+
 name: Weekly FAANG Script Run
 run-name: ${{ github.actor }} created a FAANG workflow run
 on: 
   schedule:
-    - cron: '0 9 * * SAT' # At 09:00 on Saturdays
-  workflow_dispatch:  # Allows manual run from the Actions tab
+    - cron: '0 9 * * SAT' 
+  workflow_dispatch:  
 jobs:
   run_faang_script:
     runs-on: ubuntu-latest
