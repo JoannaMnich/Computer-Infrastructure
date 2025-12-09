@@ -35,7 +35,7 @@ def plot_faang(df, timestamp):
     for col, ticker in zip(close_cols, tickers):
         plt.plot(df.index, df[col], label=ticker)
 
-    plt.title("FAANG Close Prices")
+    plt.title(f"Closing Prices - {timestamp[:8]}")
     plt.xlabel("Date")
     plt.ylabel("Close Price ($)")
     plt.legend()
