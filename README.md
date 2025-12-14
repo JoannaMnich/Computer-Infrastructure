@@ -20,12 +20,10 @@ The script uses **Yahoo Finance** data via the `yfinance` library and saves both
   - `pandas` (installed automatically with `yfinance`)
 
 Install the required libraries using:
-
 ```bash
 pip install yfinance matplotlib pandas
 
-
-Usage
+## Usage
 
 1. Clone this repository:
 
