@@ -1,11 +1,16 @@
 # Run the faang script every Saturday at 09:00 UTC
+# Adapted from ChatGpt:
+# https://chatgpt.com/c/693ef759-ee8c-8327-8309-a71934d92f9c
 
 name: Weekly FAANG Script Run
 run-name: ${{ github.actor }} created a FAANG workflow run
 on: 
   schedule:
+    # From https://crontab.guru/#0_9_*_*_6 
     - cron: '0 9 * * SAT' 
   workflow_dispatch:  
+permissions:
+  contents: write
 jobs:
   run_faang_script:
     runs-on: ubuntu-latest

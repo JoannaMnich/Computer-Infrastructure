@@ -2,3 +2,7 @@ matplotlib
 datetime
 pandas
 yfinance
+os
+matplotlib.pyplot
+
+
