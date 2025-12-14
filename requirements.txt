@@ -1,4 +1,3 @@
 matplotlib
 pandas
 yfinance
-python
