@@ -2,8 +2,10 @@
 
 import os
 from datetime import datetime
+
 import yfinance as yf
 import matplotlib.pyplot as plt
+
 
 def download_faang_data():
     tickers = ["META", "AAPL", "AMZN", "NFLX", "GOOGL"]
