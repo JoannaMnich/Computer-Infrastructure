@@ -19,20 +19,20 @@ The script uses **Yahoo Finance** data via the `yfinance` library and saves both
   - `matplotlib`
   - `pandas` (installed automatically with `yfinance`)
 
-Install the required libraries using:
+### Install the required libraries using:
 
 ```bash
 pip install yfinance matplotlib pandas
 
-- Usage
+## Usage
 
-Clone this repository:
+- Clone this repository:
 
 git clone https://github.com/yourusername/faang-stock-data.git
 cd faang-stock-data
 
 
-Run the script:
+- Run the script:
 
 python faang.py
 
@@ -47,7 +47,7 @@ Generate a line plot of closing prices and save it in the plots folder.
 
 Display the plot using matplotlib.
 
-- Folder Structure
+## Folder Structure
 faang-stock-data/
 │
 ├── data/       # Saved CSV files of stock data
@@ -55,7 +55,7 @@ faang-stock-data/
 ├── faang.py    # Main script
 └── README.md   # Project documentation
 
-- Customization
+## Customization
 
 To add or remove tickers, edit the tickers list in faang.py:
 
