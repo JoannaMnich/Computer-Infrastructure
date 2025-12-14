@@ -19,43 +19,47 @@ The script uses **Yahoo Finance** data via the `yfinance` library and saves both
   - `matplotlib`
   - `pandas` (installed automatically with `yfinance`)
 
-### Install the required libraries using:
+Install the required libraries using:
 
 ```bash
 pip install yfinance matplotlib pandas
 
-## Usage
 
-- Clone this repository:
+Usage
 
-git clone https://github.com/yourusername/faang-stock-data.git
-cd faang-stock-data
+1. Clone this repository:
+
+git clone https://github.com/JoannaMnich/Computer-Infrastructure.git
+cd Computer-Infrastructure
 
 
-- Run the script:
+2. Run the script:
 
 python faang.py
 
 
-The script will:
+3. The script will:
 
-Download the latest FAANG stock data.
+- Download the latest FAANG stock data.
+- Save it as a CSV file in the data folder.
+- Generate a line plot of closing prices and save it in the plots folder.
+- Display the plot using matplotlib.
 
-Save it as a CSV file in the data folder.
+Folder Structure
 
-Generate a line plot of closing prices and save it in the plots folder.
-
-Display the plot using matplotlib.
-
-## Folder Structure
-faang-stock-data/
+computer-infrastructure/
 │
-├── data/       # Saved CSV files of stock data
-├── plots/      # Saved PNG plots
-├── faang.py    # Main script
-└── README.md   # Project documentation
+├── .github/         # GitHub workflow/configuration files
+├── data/            # Saved CSV files of stock data
+├── plots/           # Saved PNG plots
+├── faang.py         # Main script
+├── problems.ipynb   # Notebook with experiments or problems
+├── requirements.txt # List of Python dependencies
+├── README.md        # Project documentation
+└── .gitignore       # Git ignore file
 
-## Customization
+
+Customization
 
 To add or remove tickers, edit the tickers list in faang.py:
 
