@@ -1,3 +1,5 @@
+# From Chatgpt: https://chatgpt.com/c/693f09f8-3600-8329-9b20-4ffc44ad025e
+
 #! C:/Users/jmnic/anaconda3/python.exe
 
 import os
