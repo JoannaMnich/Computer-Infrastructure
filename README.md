@@ -20,7 +20,7 @@ The script uses **Yahoo Finance** data via the `yfinance` library and saves both
   - `pandas` (installed automatically with `yfinance`)
 
 Install the required libraries using:
-```bash
+
 pip install yfinance matplotlib pandas
 
 ## Usage
@@ -43,7 +43,7 @@ python faang.py
 - Generate a line plot of closing prices and save it in the plots folder.
 - Display the plot using matplotlib.
 
-Folder Structure
+## Folder Structure
 
 computer-infrastructure/
 │
@@ -57,7 +57,7 @@ computer-infrastructure/
 └── .gitignore       # Git ignore file
 
 
-Customization
+## Customization
 
 To add or remove tickers, edit the tickers list in faang.py:
 
