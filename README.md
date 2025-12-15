@@ -46,6 +46,7 @@ python faang.py
 
 ## Folder Structure
 
+``` text
 computer-infrastructure/
 │
 ├── .github/         # GitHub workflow/configuration files
@@ -56,7 +57,7 @@ computer-infrastructure/
 ├── requirements.txt # List of Python dependencies
 ├── README.md        # Project documentation
 └── .gitignore       # Git ignore file
-
+```
 
 ## Customization
 
