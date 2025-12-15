@@ -19,15 +19,16 @@ The script uses **Yahoo Finance** data via the `yfinance` library and saves both
   - `matplotlib`
   - `pandas` (installed automatically with `yfinance`)
 
-Install the required libraries using:
+Install in (bash) the required libraries using:
 
-pip install yfinance matplotlib pandas
+- pip install yfinance matplotlib pandas
 
 ## Usage
 
 1. Clone this repository:
 
 git clone https://github.com/JoannaMnich/Computer-Infrastructure.git
+
 cd Computer-Infrastructure
 
 
